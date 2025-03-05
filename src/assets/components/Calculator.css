@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Seven Segment";
+  src: url("../fonts/Seven Segment.ttf") format("truetype");
+}
+
+.calculator-container {
+  width: 290px;
+  height: 460px;
+  background-color: #27363f;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border: 4px solid #e0e6e6;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.name-container {
+  grid-area: 1 / 1 / 2 / 6;
+}
+.screen-container {
+  grid-area: 2 / 1 / 3 / 6;
+}
+.functional-container {
+  grid-area: 3 / 1 / 4 / 6;
+}
+.numericNumbers-container {
+  grid-area: 4 / 1 / 7 / 4;
+}
+.operation-container {
+  grid-area: 4 / 4 / 7 / 6;
+  width: 90%;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.name-container .solar-pannel {
+  width: 125px;
+  height: 40px;
+  background-color: #171c25;
+  border-radius: 5px;
+  border: 1px solid #525860;
+}
+
+.screen-container {
+  position: relative;
+}
+
+.screen {
+  position: relative;
+  width: 90%;
+  height: 70px;
+  background-color: #87aaa9;
+  border: 1px solid #525860;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.screen-container p {
+  position: absolute;
+  bottom: -5px;
+  right: 25px;
+  font-size: 10px;
+}
+
+.screen-container p span {
+  font-weight: normal;
+}
+
+.screen p {
+  font-family: "Seven Segment", sans-serif;
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  color: #41687a;
+  font-size: 50px;
+  opacity: 65%;
+}
+
+.numericButtons-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.numeric-btn {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #525860;
+  box-shadow: 4px 4px 5px 1px #12191d;
+}
+
+.functional-container {
+  margin: 8px 0;
+  padding: 0 9px;
+}
+
+.functional-container ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.first-functional {
+  padding-bottom: 10px;
+}
+
+.functional-btn {
+  list-style: none;
+  width: 40px;
+  height: 24px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #525860;
+  box-shadow: 4px 4px 5px 1px #12191d;
+}
+
+.cButton {
+  background-color: #8c394b;
+  border: 1px solid #c47e88;
+}
+
+.operation-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 40px);
+  gap: 10px;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.operation-btn {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #525860;
+  box-shadow: 4px 4px 5px 1px #12191d;
+}
+
+.more-btn {
+  height: 90px;
+  grid-row: span 2;
+}
+
+.second-operation {
+  margin-top: 10px;
+}
